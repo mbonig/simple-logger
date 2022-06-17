@@ -1,5 +1,10 @@
 {
-  "name": "simple-logger",
+  "name": "@matthewbonig/simple-logger",
+  "description": "A simple logger utility for capturing all inputs and outputs to a function",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbonig/simple-logger"
+  },
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
@@ -21,6 +26,12 @@
     "watch": "npx projen watch",
     "projen": "npx projen"
   },
+  "author": {
+    "name": "Matthew Bonig",
+    "email": "matthew.bonig@gmail.com",
+    "url": "https://matthewbonig.com",
+    "organization": false
+  },
   "devDependencies": {
     "@types/jest": "^28.1.2",
     "@types/node": "^14",
@@ -39,8 +50,18 @@
     "ts-jest": "^27",
     "typescript": "^4.7.4"
   },
+  "dependencies": {
+    "aspectjs": "^2.0.4"
+  },
+  "keywords": [
+    "aspect",
+    "logging"
+  ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [

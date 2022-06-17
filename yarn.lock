@@ -1119,6 +1119,11 @@ arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha512-3CYzex9M9FGQjCGMGyi6/31c8GJbgb0qGyrx5HWxPd0aCwh4cB2YjMb2Xf9UuoogrMrlO9cTqnB5rI5GHZTcUA==
 
+aspectjs@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/aspectjs/-/aspectjs-2.0.4.tgz#639c04b3884d61d085f3bbccd4443517ad6778dc"
+  integrity sha512-COqid2pQkQ04+nEwYsluor0QCKx584ku39IgFJt0mvT0SGd0UYU5jBlOSm9I3SaL/cqiFUF12WTxo1nh0IQEjQ==
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logs async things Logs async objects 1`] = `
+Array [
+  "Executing add with args: {
+  \\"0\\": 4,
+  \\"1\\": 5
+}",
+]
+`;
+
+exports[`Logs async things Logs async objects 2`] = `
+Array [
+  "Function add returned: {
+  \\"result\\": 9
+}",
+]
+`;
+
+exports[`Logs async things Logs async things 1`] = `
+Array [
+  "Executing add with args: {
+  \\"0\\": 4,
+  \\"1\\": 5
+}",
+]
+`;
+
+exports[`Logs async things Logs async things 2`] = `
+Array [
+  "Function add returned: 9",
+]
+`;
+
+exports[`Logs sync things Logs things 1`] = `
+Array [
+  "Executing add with args: {
+  \\"0\\": 3,
+  \\"1\\": 4
+}",
+]
+`;
+
+exports[`Logs sync things Logs things 2`] = `
+Array [
+  "Function add returned: 7",
+]
+`;
+
+exports[`Logs sync things Logs things that are objects 1`] = `
+Array [
+  "Executing add with args: {
+  \\"0\\": 3,
+  \\"1\\": 4
+}",
+]
+`;
+
+exports[`Logs sync things Logs things that are objects 2`] = `
+Array [
+  "Function add returned: {
+  \\"results\\": 7
+}",
+]
+`;
