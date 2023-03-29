@@ -36,14 +36,14 @@ function logInputs(func: any, args: any) {
   logger.log(`Executing ${functionName} with args: ${serializedArgs}`);
 }
 
-function logOutputs(func: any, returnValue: any) {
+function logOutputs(func: any, returnValue: any, startWatch: number) {
   const logger = LoggerFactory.getInstance();
 
   const functionName = getFunctionName(func);
   if (isPromise(returnValue)) {
-    returnValue.then((val: any) => logger.log(`Function ${functionName} returned: ${serializeArgs(val)}`));
+    returnValue.then((val: any) => logger.log(`Function ${functionName} took ${Date.now() - startWatch}ms and returned: ${serializeArgs(val)}`));
   } else {
-    logger.log(`Function ${functionName} returned: ${serializeArgs(returnValue)}`);
+    logger.log(`Function ${functionName} took ${Date.now() - startWatch}ms and returned: ${serializeArgs(returnValue)}`);
   }
 
 }
@@ -53,8 +53,9 @@ export function useLogger(func: any) {
   return around(func).add((invocation: any) => {
     const args = invocation.args;
     logInputs(func, args);
+    const startWatch = Date.now();
     const returnValue = invocation.proceed();
-    logOutputs(func, returnValue);
+    logOutputs(func, returnValue, startWatch);
     return returnValue;
   });
 }

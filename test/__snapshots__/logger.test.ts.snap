@@ -11,7 +11,7 @@ Array [
 
 exports[`Logs async things Logs async objects 2`] = `
 Array [
-  "Function add returned: {
+  "Function add took 0ms and returned: {
   \\"result\\": 9
 }",
 ]
@@ -28,7 +28,7 @@ Array [
 
 exports[`Logs async things Logs async things 2`] = `
 Array [
-  "Function add returned: 9",
+  "Function add took 0ms and returned: 9",
 ]
 `;
 
@@ -43,7 +43,7 @@ Array [
 
 exports[`Logs sync things Logs things 2`] = `
 Array [
-  "Function add returned: 7",
+  "Function add took 0ms and returned: 7",
 ]
 `;
 
@@ -58,7 +58,7 @@ Array [
 
 exports[`Logs sync things Logs things that are objects 2`] = `
 Array [
-  "Function add returned: {
+  "Function add took 0ms and returned: {
   \\"results\\": 7
 }",
 ]
